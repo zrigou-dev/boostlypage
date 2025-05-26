@@ -1,7 +1,7 @@
 // components/HeroSection.jsx
 export default function HeroSection() {
   return (
-    <div className="bg-gradient-to-br from-[#f8fafc] to-[#e0f2fe] min-h-screen">
+    <div className="bg-gradient-to-br from-[#f8fafc] to-[#e0f2fe] min-h-screen" id="heroSecrion">
       {/* Header */}
       <header className="flex justify-between items-center px-6 md:px-20 py-6">
         <div className="text-2xl font-black text-sky-700">BoostlyPage</div>
@@ -20,7 +20,8 @@ export default function HeroSection() {
           </a>
         </nav>
         <a
-          href="#contact"
+          target="_blank"
+          href="https://wa.me/+212767496526"
           className="hidden md:block bg-sky-600 text-white px-6 py-2 rounded-xl font-semibold shadow hover:bg-sky-700 transition"
         >
           Get a Quote

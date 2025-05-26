@@ -80,9 +80,13 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <button className="bg-[#2563eb] text-white py-3 rounded-lg font-semibold hover:bg-[#1d4ed8] transition">
+            <a
+              target="_blank"
+              href="https://wa.me/+212767496526"
+              className="bg-[#2563eb] text-white py-3 rounded-lg font-semibold hover:bg-[#1d4ed8] transition block text-center"
+            >
               Get Started
-            </button>
+            </a>
           </div>
         ))}
       </div>

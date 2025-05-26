@@ -13,22 +13,22 @@ export default function Footer() {
 
         <nav className="flex space-x-8 text-sm font-medium">
           <a
-            href="#hero"
+            href="#heroSecrion"
             className="hover:text-white transition-colors duration-300"
           >
             Home
           </a>
           <a
-            href="#services"
+            href="#features"
             className="hover:text-white transition-colors duration-300"
           >
-            Services
+            Features
           </a>
           <a
-            href="#testimonials"
+            href="#portfolio"
             className="hover:text-white transition-colors duration-300"
           >
-            Testimonials
+            Portfolio
           </a>
           <a
             href="#contact"
