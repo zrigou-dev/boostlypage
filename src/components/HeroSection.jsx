@@ -4,7 +4,7 @@ export default function HeroSection() {
     <div className="bg-gradient-to-br from-[#f8fafc] to-[#e0f2fe] min-h-screen">
       {/* Header */}
       <header className="flex justify-between items-center px-6 md:px-20 py-6">
-        <div className="text-2xl font-black text-sky-700">LaunchCraft</div>
+        <div className="text-2xl font-black text-sky-700">BoostlyPage</div>
         <nav className="hidden md:flex space-x-6 text-slate-700 font-medium">
           <a href="#features" className="hover:text-sky-700 transition">
             Features
