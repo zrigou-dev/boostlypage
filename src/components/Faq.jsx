@@ -54,7 +54,7 @@ export default function FAQ() {
                 {activeIndex === index ? "-" : "+"}
               </span>
             </h3>
-            {true  && (
+            {activeIndex === index && (
               <p className="mt-3 text-slate-700">{answer}</p>
             )}
           </div>
