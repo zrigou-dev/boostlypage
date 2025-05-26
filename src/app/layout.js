@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,6 +20,36 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Best Landing Page Service | Boost Your Conversions</title>
+        <meta
+          name="description"
+          content="Professional custom landing pages tailored to boost your business growth and conversions."
+        />
+        <meta
+          name="keywords"
+          content="landing page, web design, custom landing pages, marketing pages"
+        />
+        <meta property="og:title" content="Best Landing Page Service" />
+        <meta
+          property="og:description"
+          content="Professional custom landing pages tailored to boost your business growth and conversions."
+        />
+
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4WD2V3W3RT"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4WD2V3W3RT');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
