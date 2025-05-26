@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="bg-[#0a1128] text-gray-300 py-8 px-6 md:px-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         <div className="text-center md:text-left">
-          <h3 className="text-3xl font-bold text-white">YourCompany</h3>
+          <h3 className="text-3xl font-bold text-white">BoostlyPage</h3>
           <p className="mt-2 text-sm">
-            &copy; {new Date().getFullYear()} YourCompany. All rights reserved.
+            &copy; {new Date().getFullYear()} BoostlyPage. All rights reserved.
           </p>
         </div>
 
