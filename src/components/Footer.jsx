@@ -46,10 +46,10 @@ export default function Footer() {
             className="flex items-center mb-8 group"
           >
             <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center mr-3 transform group-hover:rotate-12 transition">
-              <FaCode className="text-[#0a192f] text-xl" />
+              <span className="text-[#0a192f] font-bold text-xl">M</span>
             </div>
             <span className="text-2xl font-bold text-gray-100">
-              DevPortfolio
+              M.ZRIGOU
             </span>
           </motion.div>
 

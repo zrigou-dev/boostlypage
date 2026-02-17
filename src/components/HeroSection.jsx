@@ -47,9 +47,11 @@ export default function HeroSection() {
             className="lg:w-1/2 text-center lg:text-left"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-100 mb-6 leading-tight">
-              Hi, I'm a <span className="text-yellow-400">Web & Mobile</span>{" "}
-              Developer
+              Hi, I'm <span className="text-yellow-400">Mohamed Zrigou</span>
             </h1>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-200 mb-4">
+               Web & Mobile Developer
+            </h2>
 
             <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8">
               Crafting{" "}

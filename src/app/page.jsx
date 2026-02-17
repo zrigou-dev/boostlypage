@@ -8,15 +8,18 @@ import Skills from "@/components/Skills";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 
+import Services from "@/components/Services";
+
 export default function Home() {
   return (
     <div className="relative">
       <Header/>
       <Hero />
-     <About/>
-     <Skills/>
-     <Portfolio/>
-     <Contact/>
+      <About/>
+      <Services />
+      <Skills/>
+      <Portfolio/>
+      <Contact/>
       <Footer />
     </div>
   );

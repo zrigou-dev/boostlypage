@@ -24,10 +24,10 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition duration-300">
-              <span className="text-[#0a192f] font-bold text-xl">D</span>
+              <span className="text-[#0a192f] font-bold text-xl">M</span>
             </div>
             <span className="text-2xl font-bold text-yellow-400 hidden sm:inline-block">
-              DevPortfolio
+              M.ZRIGOU
             </span>
           </Link>
 
@@ -62,25 +62,31 @@ export default function Header() {
 
           <nav className="hidden md:flex space-x-8">
             <Link
-              href="#about"
+              href="/#about"
               className="hover:text-yellow-400 transition duration-300 font-medium"
             >
               About
             </Link>
             <Link
-              href="#portfolio"
+              href="/#services"
+              className="hover:text-yellow-400 transition duration-300 font-medium"
+            >
+              Services
+            </Link>
+            <Link
+              href="/#portfolio"
               className="hover:text-yellow-400 transition duration-300 font-medium"
             >
               portfolio
             </Link>
             <Link
-              href="#skills"
+              href="/#skills"
               className="hover:text-yellow-400 transition duration-300 font-medium"
             >
               Skills
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="hover:text-yellow-400 transition duration-300 font-medium"
             >
               Contact
@@ -104,28 +110,42 @@ export default function Header() {
       >
         <div className="flex flex-col space-y-4">
           <Link
-            href="#about"
+            href="/#about"
             className="hover:text-yellow-400 transition duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </Link>
           <Link
-            href="#portfolio"
+            href="/#services"
+            className="hover:text-yellow-400 transition duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Services
+          </Link>
+          <Link
+            href="/#portfolio"
             className="hover:text-yellow-400 transition duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
             portfolio
           </Link>
           <Link
-            href="#skills"
+            href="/#testimonials"
+            className="hover:text-yellow-400 transition duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Testimonials
+          </Link>
+          <Link
+            href="/#skills"
             className="hover:text-yellow-400 transition duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
             Skills
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className="hover:text-yellow-400 transition duration-300"
             onClick={() => setIsMenuOpen(false)}
           >

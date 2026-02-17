@@ -2,41 +2,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { projects } from "@/data/projects";
 
 export default function Portfolio() {
-  const projects = [
-    {
-      image: "/images/ouigo-en.png",
-      url: "https://www.ouigo.com/fr-en",
-      title: "OUIGO",
-    },
-    {
-      image: "/images/barnes.png",
-      url: "https://www.barnes-international.com/",
-      title: "BARNES International",
-    },
-    {
-      image: "/images/junior.png",
-      url: "https://juniorcie.sncf-connect.com/",
-      title: "Junior SNCF",
-    },
-    {
-      image: "/images/barnes-lyon.png",
-      url: "https://www.barnes-lyon.com/",
-      title: "BARNES Lyon",
-    },
-    {
-      image: "/images/taalim.png",
-      url: "#",
-      title: "Taalim",
-    },
-    {
-      image: "/images/ortho.png",
-      url: "#",
-      title: "Orthozinith",
-    },
-  ];
-
   return (
     <section
       id="portfolio"
@@ -77,50 +45,54 @@ export default function Portfolio() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
-              key={project.title}
+              key={project.id}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="relative group"
+              className="relative group h-full"
             >
-              {/* Project image */}
-              <div className="relative overflow-hidden rounded-xl aspect-video border-2 border-gray-800 group-hover:border-yellow-400 transition-all duration-300">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition duration-500"
-                />
+              {/* Project card */}
+              <Link href={`/projects/${project.id}`} className="block h-full">
+                <div className="relative overflow-hidden rounded-xl aspect-video border-2 border-gray-800 group-hover:border-yellow-400 transition-all duration-300 h-full">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition duration-500"
+                    />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-[#0a192f] opacity-0 group-hover:opacity-90 transition duration-300 flex items-center justify-center">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="text-center p-6"
-                  >
-                    <h3 className="text-2xl font-bold text-yellow-400 mb-4">
-                      {project.title}
-                    </h3>
-                    <Link
-                      href={project.url}
-                      target="_blank"
-                      className="inline-block px-6 py-2 border-2 border-yellow-400 text-yellow-400 rounded-lg hover:bg-yellow-400 hover:text-[#0a192f] transition duration-300"
-                    >
-                      View Project
-                    </Link>
-                  </motion.div>
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-[#0a192f] opacity-0 group-hover:opacity-95 transition duration-300 flex items-center justify-center p-6">
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="text-center w-full"
+                      >
+                        <h3 className="text-2xl font-bold text-yellow-400 mb-2">
+                          {project.title}
+                        </h3>
+                        <p className="text-gray-300 text-sm mb-6 line-clamp-3">
+                            {project.description}
+                        </p>
+                        <span
+                          className="inline-block px-6 py-2 border-2 border-yellow-400 text-yellow-400 rounded-lg hover:bg-yellow-400 hover:text-[#0a192f] transition duration-300 font-semibold"
+                        >
+                          View Details
+                        </span>
+                      </motion.div>
+                    </div>
                 </div>
-              </div>
-
-              {/* Floating title (visible on mobile) */}
-              <div className="mt-4 md:hidden">
+              </Link>
+              
+               {/* Floating title (visible on mobile) */}
+               <div className="mt-4 md:hidden text-center">
                 <h3 className="text-xl font-bold text-gray-100">
                   {project.title}
                 </h3>
               </div>
+
             </motion.div>
           ))}
         </div>
@@ -144,3 +116,4 @@ export default function Portfolio() {
     </section>
   );
 }
+
