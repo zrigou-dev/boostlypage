@@ -131,13 +131,6 @@ export default function Header() {
             portfolio
           </Link>
           <Link
-            href="/#testimonials"
-            className="hover:text-yellow-400 transition duration-300"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Testimonials
-          </Link>
-          <Link
             href="/#skills"
             className="hover:text-yellow-400 transition duration-300"
             onClick={() => setIsMenuOpen(false)}
