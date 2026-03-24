@@ -44,9 +44,9 @@ export default function Skills() {
       color: "from-yellow-500 to-yellow-700",
     },
     {
-      title: "DevOps",
+      title: "Cloud & DevOps",
       icon: <SiDocker className="text-4xl text-red-400" />,
-      skills: ["Git", "GitHub", "Docker", "CI/CD (GitHub Actions)"],
+      skills: ["AWS / GCP", "Docker & Kubernetes", "Terraform", "CI/CD Pipelines"],
       color: "from-red-500 to-red-700",
     },
     {
@@ -180,14 +180,12 @@ export default function Skills() {
               <div className="flex flex-wrap gap-3">
                 {[
                   "Redux",
-                  "Context API",
                   "Jest",
-                  "React Testing Library",
-                  "Webpack",
                   "Vite",
                   "Framer Motion",
-                  "Responsive Design",
-                  "PWA",
+                  "Linux",
+                  "Serverless",
+                  "Git / GitHub",
                   "WebSockets",
                 ].map((skill) => (
                   <motion.div

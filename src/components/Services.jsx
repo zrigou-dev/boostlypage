@@ -1,7 +1,7 @@
 
 // components/Services.jsx
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaMobileAlt, FaPalette, FaRocket } from "react-icons/fa";
+import { FaLaptopCode, FaMobileAlt, FaPalette, FaCloud } from "react-icons/fa";
 
 export default function Services() {
   const services = [
@@ -24,10 +24,10 @@ export default function Services() {
         "Designing intuitive and visually appealing user interfaces that prioritize user experience and drive engagement.",
     },
     {
-      icon: <FaRocket className="text-4xl text-yellow-400" />,
-      title: "Consultation & Strategy",
+      icon: <FaCloud className="text-4xl text-yellow-400" />,
+      title: "Cloud & DevOps Solutions",
       description:
-        "Providing technical consultation and strategic planning to help you choose the right tech stack and architecture for your project.",
+        "Designing scalable cloud architectures, automating CI/CD pipelines, and ensuring reliable infrastructure deployment for robust applications.",
     },
   ];
 

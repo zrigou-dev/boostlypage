@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import { FaGamepad } from "react-icons/fa";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -93,13 +94,22 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* CTA Button */}
-          <button
-            onClick={downloadCV}
-            className="hidden md:block px-6 py-2 bg-yellow-400 text-[#0a192f] font-bold rounded-md hover:bg-yellow-300 transition duration-300 transform hover:scale-105"
-          >
-            Download CV
-          </button>
+          {/* Action Buttons */}
+          <div className="hidden md:flex items-center space-x-5">
+            <Link
+              href="/games"
+              className="group flex items-center justify-center p-2 rounded-full bg-[#112240] border border-gray-800 hover:border-yellow-400 hover:bg-[#1e2f4a] transition-all duration-300 shadow-md"
+              title="Mini Games"
+            >
+              <FaGamepad className="text-xl sm:text-2xl text-gray-400 group-hover:text-yellow-400 transition-colors" />
+            </Link>
+            <button
+              onClick={downloadCV}
+              className="px-6 py-2 bg-yellow-400 text-[#0a192f] font-bold rounded-md hover:bg-yellow-300 transition duration-300 transform hover:scale-105"
+            >
+              Download CV
+            </button>
+          </div>
         </div>
       </div>
 
@@ -136,6 +146,13 @@ export default function Header() {
             onClick={() => setIsMenuOpen(false)}
           >
             Skills
+          </Link>
+          <Link
+            href="/games"
+            className="hover:text-yellow-400 transition duration-300 text-yellow-500 font-semibold flex items-center"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <FaGamepad className="mr-3 text-xl" /> Mini Games
           </Link>
           <Link
             href="/#contact"

@@ -50,7 +50,7 @@ export default function HeroSection() {
               Hi, I'm <span className="text-yellow-400">Mohamed Zrigou</span>
             </h1>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-200 mb-4">
-               Web & Mobile Developer
+               Full-Stack Developer | DevOps & Cloud Engineer
             </h2>
 
             <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8">
@@ -62,8 +62,8 @@ export default function HeroSection() {
 
             <p className="text-base sm:text-lg text-gray-400 mb-10 max-w-lg mx-auto lg:mx-0">
               I specialize in building high-performance web and mobile
-              applications with stunning user interfaces and flawless
-              functionality.
+              applications, scalable cloud architectures, and robust CI/CD pipelines
+              with stunning user interfaces and flawless functionality.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -84,7 +84,7 @@ export default function HeroSection() {
 
             {/* Tech Stack Badges */}
             <div className="mt-12 flex flex-wrap justify-center lg:justify-start gap-3">
-              {["React", "Next.js", "Expo", "Node.js", "Tailwind CSS"].map(
+              {["React", "Next.js", "Node.js", "AWS", "Kubernetes", "Docker", "Terraform"].map(
                 (tech) => (
                   <motion.div
                     key={tech}
