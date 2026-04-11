@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "check-lint": "eslint src --ext .js,.jsx,.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },
