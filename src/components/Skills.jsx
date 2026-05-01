@@ -1,3 +1,4 @@
+"use client";
 // components/Skills.js
 import { motion } from "framer-motion";
 import {

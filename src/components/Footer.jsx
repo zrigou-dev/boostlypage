@@ -1,13 +1,19 @@
-// components/Footer.js
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp, FaLinkedin, FaCode } from "react-icons/fa";
 
 export default function Footer() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <footer className="relative bg-[#0a192f] border-t border-gray-800 overflow-hidden">
       {/* Animated floating elements */}
       <div className="absolute inset-0 opacity-10 overflow-hidden">
-        {[...Array(8)].map((_, i) => (
+        {mounted && [...Array(8)].map((_, i) => (
           <motion.div
             key={i}
             animate={{

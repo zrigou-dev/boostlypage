@@ -1,8 +1,13 @@
-// components/Contact.js
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp, FaPhoneAlt, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const contactMethods = [
     {
       icon: <FaWhatsapp className="text-5xl text-green-500" />,
@@ -32,7 +37,7 @@ export default function Contact() {
       icon: <FaEnvelope className="text-5xl text-yellow-400" />,
       title: "Email",
       details: "For formal inquiries",
-      link: "mailto:contact@hexacodify.com",
+      link: "mailto:zrigoudev@gmail.com",
       color: "hover:shadow-yellow-400/30",
       pulse: "bg-yellow-400/20",
     },
@@ -45,7 +50,7 @@ export default function Contact() {
     >
       {/* Animated floating tech bubbles */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
-        {["</>", "{}", "()", "[]", "=>", "++"].map((symbol, i) => (
+        {mounted && ["</>", "{}", "()", "[]", "=>", "++"].map((symbol, i) => (
           <motion.div
             key={i}
             animate={{

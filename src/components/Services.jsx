@@ -1,4 +1,4 @@
-
+"use client";
 // components/Services.jsx
 import { motion } from "framer-motion";
 import { FaLaptopCode, FaMobileAlt, FaPalette, FaCloud } from "react-icons/fa";

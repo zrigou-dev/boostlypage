@@ -1,4 +1,4 @@
-// components/Portfolio.jsx
+"use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -62,14 +62,6 @@ export default function Portfolio() {
                     fill
                     className="object-cover group-hover:scale-110 transition duration-700 ease-in-out"
                   />
-                  {/* Technology Overlay */}
-                  <div className="absolute bottom-4 left-4 right-4 z-20 flex flex-wrap gap-2">
-                    {project.technologies?.slice(0, 3).map((tech) => (
-                      <span key={tech} className="px-3 py-1 bg-yellow-400/10 backdrop-blur-md border border-yellow-400/20 text-yellow-400 text-[10px] uppercase tracking-wider font-bold rounded-full">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
                 </div>
 
                 {/* Content Container */}
@@ -78,7 +70,6 @@ export default function Portfolio() {
                     <h3 className="text-2xl font-bold text-gray-100 group-hover:text-yellow-400 transition-colors">
                       {project.title}
                     </h3>
-                    <span className="text-gray-500 text-xs font-mono">{project.date}</span>
                   </div>
                   
                   <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
