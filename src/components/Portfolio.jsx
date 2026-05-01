@@ -42,42 +42,61 @@ export default function Portfolio() {
         </motion.div>
 
         {/* Projects grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group h-full flex flex-col"
+              className="group"
             >
-              {/* Project card */}
-              <Link href={`/projects/${project.id}`} className="block h-full bg-[#112240] rounded-xl overflow-hidden border border-gray-800 hover:border-yellow-400 transition-all duration-300 shadow-lg hover:-translate-y-2 flex flex-col">
+              <Link href={`/projects/${project.id}`} className="block h-full bg-[#112240]/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-800 hover:border-yellow-400/50 transition-all duration-500 shadow-xl hover:shadow-yellow-400/5 flex flex-col group relative">
                 {/* Image Container */}
-                <div className="relative aspect-video overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition duration-500"
-                    />
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f] to-transparent opacity-60 z-10"></div>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition duration-700 ease-in-out"
+                  />
+                  {/* Technology Overlay */}
+                  <div className="absolute bottom-4 left-4 right-4 z-20 flex flex-wrap gap-2">
+                    {project.technologies?.slice(0, 3).map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-yellow-400/10 backdrop-blur-md border border-yellow-400/20 text-yellow-400 text-[10px] uppercase tracking-wider font-bold rounded-full">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Content Container */}
-                <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-2xl font-bold text-gray-100 mb-2 group-hover:text-yellow-400 transition-colors">
+                <div className="p-8 flex flex-col flex-grow">
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-2xl font-bold text-gray-100 group-hover:text-yellow-400 transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-gray-400 text-sm mb-4 line-clamp-3 flex-grow">
-                        {project.description}
-                    </p>
-                    <span
-                      className="inline-block text-yellow-400 font-semibold group-hover:underline"
-                    >
-                      View Details →
-                    </span>
+                    <span className="text-gray-500 text-xs font-mono">{project.date}</span>
+                  </div>
+                  
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+                    {project.description}
+                  </p>
+                  
+                  <div className="flex items-center text-sm font-bold text-yellow-400 group-hover:gap-2 transition-all">
+                    <span>EXPLORE PROJECT</span>
+                    <motion.span 
+                      initial={{ x: -5, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      className="ml-2"
+                    >→</motion.span>
+                  </div>
                 </div>
+
+                {/* Premium Hover Effect - Bottom Line */}
+                <div className="absolute bottom-0 left-0 h-[2px] bg-yellow-400 w-0 group-hover:w-full transition-all duration-500"></div>
               </Link>
             </motion.div>
           ))}

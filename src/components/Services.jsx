@@ -29,6 +29,12 @@ export default function Services() {
       description:
         "Designing scalable cloud architectures, automating CI/CD pipelines, and ensuring reliable infrastructure deployment for robust applications.",
     },
+    {
+      icon: <FaLaptopCode className="text-4xl text-yellow-400" />,
+      title: "Chrome Extension Development",
+      description:
+        "Building powerful browser extensions using Plasmo, enabling enhanced functionality and seamless integration with the Chrome browser.",
+    },
   ];
 
   return (

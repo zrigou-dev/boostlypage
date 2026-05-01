@@ -182,6 +182,7 @@ export default function Skills() {
                   "Redux",
                   "Jest",
                   "Vite",
+                  "Plasmo",
                   "Framer Motion",
                   "Linux",
                   "Serverless",

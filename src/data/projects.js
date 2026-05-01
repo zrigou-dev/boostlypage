@@ -1,5 +1,17 @@
 
 export const projects = [
+  // {
+  //   id: "inspectra",
+  //   title: "Inspectra Web Auditor",
+  //   description: "A professional Chrome extension built with Plasmo and React that provides real-time accessibility and performance auditing directly in the browser. Features include automated reports, DOM inspection, and SEO optimization suggestions.",
+  //   image: "/images/inspectra.png",
+  //   url: "#",
+  //   date: "2025",
+  //   role: "Lead Developer",
+  //   technologies: ["Plasmo", "React", "TypeScript", "Chrome API"],
+  //   challenge: "Efficiently analyzing large DOM trees without impacting browser performance.",
+  //   solution: "Implemented a non-blocking background worker for heavy computations and optimized tree-shaking for the extension bundle.",
+  // },
   {
     id: "ouigo",
     title: "OUIGO",

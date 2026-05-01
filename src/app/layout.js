@@ -13,35 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "M.ZRIGOU | Web & Mobile Developer Portfolio",
-  description:
-    "Professional portfolio of M.ZRIGOU, a skilled web & mobile developer specialized in building high-quality, modern, and scalable applications using Next.js, React Native, and more.",
+  title: "Zrigou | M.ZRIGOU - Web & Mobile Developer",
+  description: "Professional portfolio of M.ZRIGOU, a skilled web & mobile developer specializing in high-quality, modern applications using Next.js, Plasmo, and React Native.",
+  keywords: "web developer, mobile developer, portfolio, React, React Native, Next.js, Plasmo, Chrome Extensions, frontend, backend",
+  icons: {
+    icon: "/icon.png",
+  },
+  openGraph: {
+    title: "Zrigou | M.ZRIGOU",
+    description: "Modern web and mobile applications tailored for business success.",
+    type: "website",
+    siteName: "M.ZRIGOU Portfolio",
+  }
 };
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <title>M.ZRIGOU | Web & Mobile Developer Portfolio</title>
-        <meta
-          name="description"
-          content="Professional portfolio of M.ZRIGOU, a skilled web & mobile developer specialized in building high-quality, modern, and scalable applications using Next.js, React Native, and more."
-        />
-        <meta
-          name="keywords"
-          content="web developer, mobile developer, portfolio, React, React Native, Next.js, frontend, backend, MERN, Expo, freelance developer"
-        />
-        <meta property="og:title" content="M.ZRIGOU | Web & Mobile Developer" />
-        <meta
-          property="og:description"
-          content="Discover the work and skills of M.ZRIGOU, expert in creating modern web and mobile applications tailored for business success."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="M.ZRIGOU Portfolio" />
-      </head>
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
