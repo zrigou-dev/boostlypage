@@ -25,9 +25,9 @@ export default function Services() {
     },
     {
       icon: <FaCloud className="text-4xl text-yellow-400" />,
-      title: "Cloud & DevOps Solutions",
+      title: "Backend & Infrastructure",
       description:
-        "Designing scalable cloud architectures, automating CI/CD pipelines, and ensuring reliable infrastructure deployment for robust applications.",
+        "Powering applications with secure, scalable backend systems and reliable infrastructure to ensure your products remain fast and available.",
     },
     {
       icon: <FaLaptopCode className="text-4xl text-yellow-400" />,

@@ -29,13 +29,13 @@ export default function Skills() {
     {
       title: "Mobile Development",
       icon: <FaMobileAlt className="text-4xl text-purple-400" />,
-      skills: ["React Native", "Expo", "Push Notifications"],
+      skills: ["React Native", "Expo", "Mobile UI/UX"],
       color: "from-purple-500 to-purple-700",
     },
     {
-      title: "Back-End & APIs",
+      title: "Back-End Systems",
       icon: <FaServer className="text-4xl text-green-400" />,
-      skills: ["Node.js", "Express.js", "REST APIs", "GraphQL"],
+      skills: ["Node.js", "Express.js", "REST & GraphQL", "Authentication"],
       color: "from-green-500 to-green-700",
     },
     {
@@ -45,9 +45,9 @@ export default function Skills() {
       color: "from-yellow-500 to-yellow-700",
     },
     {
-      title: "Cloud & DevOps",
+      title: "Cloud & Infrastructure",
       icon: <SiDocker className="text-4xl text-red-400" />,
-      skills: ["AWS / GCP", "Docker & Kubernetes", "Terraform", "CI/CD Pipelines"],
+      skills: ["AWS / GCP", "Docker", "CI/CD Pipelines", "Serverless"],
       color: "from-red-500 to-red-700",
     },
     {

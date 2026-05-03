@@ -65,7 +65,7 @@ export default function About() {
             className="lg:w-2/3 text-gray-300 relative z-10"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-gray-100 mb-6">
-              Full-Stack Developer & Cloud Architect Specializing in Modern Apps & Scalable Infrastructure
+              Web & Mobile Developer Specializing in Front-end & Crafting Exceptional User Experiences
             </h3>
 
             <div className="space-y-4 mb-8">
@@ -79,10 +79,10 @@ export default function About() {
               <p>
                 I specialize in{" "}
                 <span className="text-yellow-400">
-                  React, Next.js, Node.js, AWS, and Docker
+                  React, Next.js, React Native, Tailwind CSS, and Node.js
                 </span>
-                . I combine technical excellence with cloud-native engineering to
-                build and deploy scalable, robust applications and automated CI/CD pipelines.
+                . While my primary focus is on building immersive front-end experiences, I also have a strong background in
+                backend systems and DevOps, allowing me to deliver comprehensive end-to-end solutions.
               </p>
               <p>
                 When I'm not coding, you can find me contributing to open-source
@@ -94,10 +94,10 @@ export default function About() {
             {/* Skills progress bars */}
             <div className="space-y-6">
               {[
-                { name: "Web & Mobile Auth", level: 95 },
-                { name: "Cloud Architecture", level: 90 },
-                { name: "DevOps & CI/CD", level: 85 },
-                { name: "Mobile Development", level: 80 },
+                { name: "Front-end Development", level: 95 },
+                { name: "Mobile Development (React Native)", level: 90 },
+                { name: "UI/UX Implementation", level: 85 },
+                { name: "Backend & DevOps", level: 80 },
               ].map((skill, index) => (
                 <motion.div
                   key={skill.name}
