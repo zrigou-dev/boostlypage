@@ -1,23 +1,22 @@
 
 export const projects = [
-  // {
-  //   id: "inspectra",
-  //   title: "Inspectra Web Auditor",
-  //   description: "A professional Chrome extension built with Plasmo and React that provides real-time accessibility and performance auditing directly in the browser. Features include automated reports, DOM inspection, and SEO optimization suggestions.",
-  //   image: "/images/inspectra.png",
-  //   url: "#",
-  //   date: "2025",
-  //   role: "Lead Developer",
-  //   technologies: ["Plasmo", "React", "TypeScript", "Chrome API"],
-  //   challenge: "Efficiently analyzing large DOM trees without impacting browser performance.",
-  //   solution: "Implemented a non-blocking background worker for heavy computations and optimized tree-shaking for the extension bundle.",
-  // },
+  {
+    id: "inspectra",
+    title: "Inspectra Web Auditor",
+    description: "The ultimate professional web auditing suite for SEO, Performance, and Security. Inspectra provides real-time analysis of websites, offering actionable insights to optimize performance, enhance SEO, and bolster security. Built with Plasmo and React, it features Core Web Vitals tracking, smart recommendations, and professional PDF reports—all while keeping your data local and private.",
+    image: "/images/inspectra_marketing.png",
+    url: "https://chromewebstore.google.com/detail/inspectra/cigkjdonlacckgibgplilnfaekkbnmpm?authuser=0&hl=ar",
+    category: "Chrome Extension",
+    technologies: ["Plasmo", "React", "TypeScript", "TailwindCSS"],
+  },
   {
     id: "ouigo",
     title: "OUIGO",
     description: "A high-traffic travel booking platform requiring seamless user experience and robust performance. I contributed to the frontend development, ensuring accessibility and responsiveness across all devices.",
     image: "/images/ouigo-en.png",
     url: "https://www.ouigo.com/fr-en",
+    category: "Web Application",
+    technologies: ["React", "Next.js", "SASS"],
   },
   {
     id: "barnes-international",
@@ -25,6 +24,8 @@ export const projects = [
     description: "A luxury real estate platform showcasing exclusive properties worldwide. The focus was on high-end design, smooth transitions, and multi-language support.",
     image: "/images/barnes.png",
     url: "https://www.barnes-international.com/",
+    category: "Web Application",
+    technologies: ["React", "Node.js", "PostgreSQL"],
   },
   {
     id: "junior-sncf",
@@ -32,6 +33,8 @@ export const projects = [
     description: "A dedicated portal for young travelers, featuring gamified elements and a simplified booking flow specifically designed for children and families.",
     image: "/images/junior.png",
     url: "https://juniorcie.sncf-connect.com/",
+    category: "Web Application",
+    technologies: ["React", "Framer Motion", "Spring Boot"],
   },
   {
     id: "barnes-lyon",
@@ -39,6 +42,8 @@ export const projects = [
     description: "A regional branch of the BARNES network, focusing on the specific needs of the Lyon real estate market with localized features and content.",
     image: "/images/barnes-lyon.png",
     url: "https://www.barnes-lyon.com/",
+    category: "Web Application",
+    technologies: ["React", "PHP", "Symfony"],
   },
   {
     id: "taalim",
@@ -46,6 +51,8 @@ export const projects = [
     description: "An educational platform dedicated to providing accessible learning resources. Features include course management, student progress tracking, and interactive quizzes.",
     image: "/images/taalim.png",
     url: "#",
+    category: "LMS",
+    technologies: ["Next.js", "Firebase", "TailwindCSS"],
   },
   {
     id: "orthozinith",
@@ -53,5 +60,7 @@ export const projects = [
     description: "A medical practice website offering information on orthodontic treatments, appointment scheduling, and patient resources.",
     image: "/images/ortho.png",
     url: "#",
+    category: "Portfolio",
+    technologies: ["React", "Styled Components"],
   },
 ];
